@@ -1,0 +1,247 @@
+
+/* =================================Responsive======================================== */
+:root{
+    font-size: 16px;
+}
+@media screen and (min-width: 1400px){
+    .container{
+        max-width: 1320px;
+    }
+
+}
+@media screen and (max-width: 1400px){
+    .container{
+        max-width: 1140px;
+    }
+
+    /* =================Gallary========================= */
+    .gallary-gride{
+        height: 990px;
+    }
+
+
+
+}
+@media screen and (max-width: 1200px){
+    .container{
+        max-width: 960px;
+    }
+
+    /* ============================navbar====================== */
+    .menu-icon{
+        display: block;
+    }
+
+    nav ul{
+        transform: translateX(100%);
+        position: absolute;
+        display: flex;
+        gap: 0;
+        background-color:#fff;
+        flex-direction: column;
+        width: 350px;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding-inline: 10px;
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+}
+
+      nav ul li {
+        padding-block: 20px;
+      }
+
+      nav ul li.close-icons{
+        display: block;
+        text-align: right;
+
+      }
+
+      nav ul li.close-icons a{
+        font-size: 25px;
+      }
+
+      nav div.mode-group{
+        margin-left: auto;
+        margin-right: 20px;
+      }
+
+      /* =================Gallary========================= */
+    .gallary-gride{
+        height: 840px;
+    }
+    /* ====================footer===================== */
+    footer :is(.about,.contact-detail){
+        width:calc(calc(100% - var(--gab))/2) ;
+        order: 1;
+      }
+
+      footer .sbudescription{
+        width:100% ;
+        order: 2;
+       
+      }
+}
+    
+@media screen and (max-width: 992px){
+    .container{
+        max-width: 720px;
+    }
+
+/* ========================header============================= */
+ 
+
+header .container {
+    
+    
+    justify-content: center;
+    
+    flex-direction: column-reverse;
+    
+   
+  }
+   header .container >*{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   }
+   header .container .header-content{
+    margin-top: 30px;
+   }
+
+   header .btn-main{
+    --border-radius: 100vh;
+   }
+
+   /* ===========Chefs==================== */
+   .Chefs-cards .card{
+    width: calc(calc(100% - var(--gaps))/2);}
+
+    /* ========================Gallary================ */
+
+    .gallary-gride picture{
+        width: calc(calc(100% - var(--gab) )/2);}
+
+        .gallary-gride{
+            height: 1385px;
+        }  
+
+
+        .pizza{
+            order: 1;
+        }
+        .Burger{
+            order: 2;
+        }
+        .Levitation-pizza{
+            order: 3;
+        }
+
+        .Frittata{
+            order: 4;
+        }
+
+        .Steek-meal-BBQ{
+            order: 5;
+        }
+        .Crispy-Fried-Chicken{
+            order: 6;
+        }
+
+        .Lyulya-kebab{
+            order: 7;
+        }
+
+        /* ===============================Contact========================= */
+
+
+        .Contact-content form .input-group input {
+            width:100%;
+           }
+           
+
+    
+
+}
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 540px;
+    }
+
+    /* ===================Chefs===================== */
+    .Chefs-cards .card{
+        width: 100%;}
+
+    /* =========================Gallary============================ */
+        .gallary-gride picture{
+            width: 100%;}
+    
+            .gallary-gride{
+                height: auto;
+            }  
+    
+    
+     /* ======================Contact==============================        */
+     .contact-details > div{
+        width: 100%;
+     }
+
+     /* ====================footer===================== */
+    footer :is(.about,.contact-detail,.sbudescription){
+        width:100% ;
+        order: 0;
+      }
+
+      
+
+}
+
+@media screen and (max-width: 576px){
+    .container{
+        padding-inline:15px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 400px){
+    /* =================header================ */
+    .header-content h2 {
+        font-size: 2.0625rem;
+    }
+    .header-content p {
+        font-size: .75rem;
+    }
+    .header-content .btn-group{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin-top: 35px;
+        font-size: .8125rem;
+    
+      }
+      .header-content .btn-group  .btn-main{
+        font-size: .8125rem;
+      }
+
+     header picture img:hover{
+        animation: none;
+        -webkit-animation: none;
+}
+
+/* ===============Gallary===================== */
+.gallary-gride .layer p{
+    
+    
+    font-size: 12px;
+  }
+
+}
+

@@ -1,0 +1,71 @@
+/* body:has(.mode-group input:checked),nav:has(.mode-group input:checked){
+    background: red;
+   
+} */
+
+
+:root:has(.mode-group input:checked),nav:has(.mode-group input:checked){
+    --color-default: #fff;
+    --primary-hue: 35;
+    --primary-saturation: 72%;
+    --primary-lightness: 44%;
+    --color-primary: hsl( var(--primary-hue), var(--primary-saturation), var(--primary-lightness) );
+    --color-secondary: #fff;
+    --color-tertiary: #9f9f9f;
+    --light-hue: 0;
+    --light-saturation: 0%;
+    --light-lightness: 9%;
+    --color-light: hsl( var(--light-hue), var(--light-saturation), var(--light-lightness) );
+    --color-light-grey: #252525;
+    --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-primary: "Amatic SC", sans-serif;
+    --font-secondary: "Inter", sans-serif;
+    --animation-duration: 400ms;
+
+
+  }
+
+
+  body:not(:has(:target)):has(.mode-group input:checked).Home-link,
+  body:has(.Home:target):has(.mode-group input:checked).Home-link,
+  body:has(.Chefs:target):has(.mode-group input:checked) .Chefs-link,
+  body:has(.Gallary:target):has(.mode-group input:checked).Gallary-link,
+  body:has(.Contact:target):has(.mode-group input:checked).Contact-link{
+   color: var(--color-default);
+    
+  }
+
+
+  body:not(:has(:target)):has(.mode-group input:checked) .Home-link::before,
+  body:has(.Home:target):has(.mode-group input:checked) .Home-link::before,
+  body:has(.Chefs:target):has(.mode-group input:checked) .Chefs-link::before,
+  body:has(.Gallary:target):has(.mode-group input:checked) .Gallary-link::before,
+  body:has(.Contact:target):has(.mode-group input:checked) .Contact-link::before
+  {
+    width: 100%;
+  }
+
+
+  body:has(.mode-group input:checked) .light i{
+    display: block;
+  }
+
+  
+  body:has(.mode-group input:checked) .dark i{
+    display: none;
+  }
+  /* body:has(.mode-group input:checked)  .video-btn .icon{
+    
+   background-image: linear-gradient(to right,red 0% 50%,transparent 50% 100%);} */
+
+  body:has(.mode-group input:checked) nav ul li a:hover{
+    color:var(--color-default);
+  }
+
+  body:has(.mode-group input:checked){
+    background-color: #252525;
+  }
+
+  body:has(.mode-group input:checked) .Chefs-cards .card picture::before{
+    background-image: url(../img/team-shape-dark.svg)
+  }
